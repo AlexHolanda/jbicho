@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Combustível</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="tittle">Controle de Combustível</div>
+            <div>
+                <label>Carros:</label>
+                <div class="input">
+                    <select id="sCarros">
+                        <option value=""></option>
+                        <option value="Golf">Golf</option>
+                        <option value="BMW">BMW</option>
+                        <option value="FiatToro">Fiat Toro</option>
+                        <option value="Onix">Onix</option>
+                        <option value="Prisma">Prisma</option>
+                        <option value="Gol">Gol</option>
+                        <option value="Cobalt">Cobalt</option>
+                        <option value="Fusca">Fusca</option>
+                    </select>
+                    <label>KM/LT:</label>
+                    <input type="text" name="qtPorLitro" id="qtPorLitro" style="width: 60px;">
+                </div>
+            </div>
+            <div>
+                <label>Valor:</label>
+                <div class="input">
+                    <input type="text" name="valor" id="valor" style="width: 150px;">
+                    <label>Vlr Gás:</label>
+                    <input type="text" name="vGas" id="vGas" style="width: 60px;">
+                </div>
+            </div>
+            <div>
+                <label>Litros a Comprar:</label>
+                <div class="input">
+                    <input type="text" name="litros" id="litros">
+                </div>
+            </div>
+            <div>
+                <label>Kilometros a rodar:</label>
+                <div class="input">
+                    <input type="text" name="kRodar" id="kRodar">
+                </div>
+            </div>
+            <div>
+                <label>Vlr Alcool:</label>
+                    <input type="text" name="vAlc" id="vAlc" style="width: 60px;"><br><br>
+                    <label id="mensagem"></label><br>
+            </div>
+            <div>
+                <button onclick="calcular()" id="btcalcular">Calcular</button>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

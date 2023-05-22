@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Mega Sena</title>
+    <link rel="stylesheet" href="megasena.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="box-1">
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a href="http://127.0.0.1:5500/index.html"><span class="bx bxs-home"></span>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/imc/imc.html"><span class="bx bxs-calculator"></span>
+                                <span>Cálculo IMC</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/jogodavelha/jogodavela.html"><span
+                                    class="bx bxs-dice-1"></span>
+                                <span>Jogo da Velha</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/combustivel/index.html"><span class="bx bxs-hot"></span>
+                                <span>Combustível</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/geranumeros/lotofacil.html"><span
+                                    class="bx bxs-dice-1"></span>
+                                <span>Lotofácil</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/geranumeros/megasena.html"><span
+                                    class="bx bxs-dice-1"></span>
+                                <span>Mega Sena</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/geranumeros/bicho.html"><span
+                                    class="bx bxs-dice-1"></span>
+                                <span>Jogo do Bicho</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/geranumeros/diadesorte.html"><span
+                                    class="bx bxs-dice-1"></span>
+                                <span>Dia de Sorte</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column" id="playLoto">
+                <div class="body">
+                    <div id="fundo">
+                        <img src="https://logodownload.org/wp-content/uploads/2018/10/mega-sena-logo-3-768x152.png"
+                            alt="Mega Sena" id="logomegasena">
+                        <div id="divNumeros">
+                            <section>
+                                <span id="um" class="numeros">1</span>
+                                <span id="dois" class="numeros">2</span>
+                                <span id="tres" class="numeros">3</span>
+                                <span id="quatro" class="numeros">4</span>
+                                <span id="cinco" class="numeros">5</span>
+                                <span id="seis" class="numeros">6</span>
+                                <span id="sete" class="numeros">7</span>
+                                <span id="oito" class="numeros">8</span>
+                                <span id="nove" class="numeros">9</span>
+                                <span id="dez" class="numeros">10</span>
+                                <br></br>
+                                <span id="onze" class="numeros">11</span>
+                                <span id="doze" class="numeros">12</span>
+                                <span id="treze" class="numeros">13</span>
+                                <span id="quatorze" class="numeros">14</span>
+                                <span id="quinze" class="numeros">15</span>
+                                <span id="dezeseis" class="numeros">16</span>
+                                <span id="dezesete" class="numeros">17</span>
+                                <span id="dezoito" class="numeros">18</span>
+                                <span id="dezenove" class="numeros">19</span>
+                                <span id="vinte" class="numeros">20</span>
+                                <br></br>
+                                <span id="vinteeum" class="numeros">21</span>
+                                <span id="vinteedois" class="numeros">22</span>
+                                <span id="vinteetres" class="numeros">23</span>
+                                <span id="vinteequatro" class="numeros">24</span>
+                                <span id="vinteecinco" class="numeros">25</span>
+                                <span id="vinteseis" class="numeros">26</span>
+                                <span id="vinteesete" class="numeros">27</span>
+                                <span id="vinteeoito" class="numeros">28</span>
+                                <span id="vinteenove" class="numeros">29</span>
+                                <span id="trinta" class="numeros">30</span>
+                                <br></br>
+                                <span id="trintaeum" class="numeros">31</span>
+                                <span id="trintaedois" class="numeros">32</span>
+                                <span id="trintaetres" class="numeros">33</span>
+                                <span id="trintaequatro" class="numeros">34</span>
+                                <span id="trintaecinco" class="numeros">35</span>
+                                <span id="trintaseis" class="numeros">36</span>
+                                <span id="trintaesete" class="numeros">37</span>
+                                <span id="trintaeoito" class="numeros">38</span>
+                                <span id="trintaenove" class="numeros">39</span>
+                                <span id="quarenta" class="numeros">40</span>
+                                <br></br>
+                                <span id="quarentaeum" class="numeros">41</span>
+                                <span id="quarentaedois" class="numeros">42</span>
+                                <span id="quarentaetres" class="numeros">43</span>
+                                <span id="quarentaequatro" class="numeros">44</span>
+                                <span id="quarentaecinco" class="numeros">45</span>
+                                <span id="quarentaseis" class="numeros">46</span>
+                                <span id="quarentaesete" class="numeros">47</span>
+                                <span id="quarentaeoito" class="numeros">48</span>
+                                <span id="quarentaenove" class="numeros">49</span>
+                                <span id="cinquenta" class="numeros">50</span>
+                                <br></br>
+                                <span id="cinquentaeum" class="numeros">51</span>
+                                <span id="cinquentaedois" class="numeros">52</span>
+                                <span id="cinquentaetres" class="numeros">53</span>
+                                <span id="cinquentaequatro" class="numeros">54</span>
+                                <span id="cinquentaecinco" class="numeros">55</span>
+                                <span id="cinquentaseis" class="numeros">56</span>
+                                <span id="cinquentaesete" class="numeros">57</span>
+                                <span id="cinquentaeoito" class="numeros">58</span>
+                                <span id="cinquentaenove" class="numeros">59</span>
+                                <span id="sessenta" class="numeros">60</span>
+                                <br></br>
+                                <div id="btgerar" style="align-items: center;">
+                                    <button id="btGerarNumeros" onclick="gerar()">Gerar</button>
+                                    <button id="btLimparNumeros" onclick="limparNumeros()">Limpar</button>
+                                </div>
+                                <div>
+                                    <h2>
+                                        <label id="resposta"></label>
+                                    </h2>
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column" id="playRes">
+                <div id="headRes">
+                    <span id="headspan">Os números gerados são:</span>
+                    <h3>
+                        <hr>
+                        <label id="resposta"></label><br>                       
+                    </h3>
+                    <div id="resParImpar"><br>
+                        <label>Números Pares:</label>
+                        <label id="resPar"></label>
+                        <br>
+                        <label>Números Ímpares:</label>
+                        <label id="resImpar"></label>
+                        <hr>
+                        <br>
+                        <label>Números Fixos:</label><br>
+                        <label id="resFixos"></label><br>
+                        <hr>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </main>
+    <script src="./megasena.js"></script>
+    <script>
+        function abrirMenu() {
+            document.getElementById('menu').style.width = '250px'
+        }
+        function fecharMenu() {
+            document.getElementById('menu').style.width = '0px'
+        }
+    </script>
+</body>
+
+</html>
